@@ -16,6 +16,7 @@
         "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
         "types": ["jest", "node", "@testing-library/jest-dom"], // Specifies type definitions to be included
         "typeRoots": ["../node_modules/@types", "./types"], // Specifies the root folders for type definitions
+        "outDir": "./dist", // Specifies the output directory for compiled files
     },
     "include": ["./src/index.tsx", "./src/**/*.ts", "./src/**/*.tsx", "./src/**/*.js", "./src/**/*.jsx"], // Specifies the files to be included in the compilation
     "exclude": ["node_modules", "dist", "build", "coverage", "scripts", "webpack.config.js", "webpack.dev.js", "webpack.prod.js", "jest.config.js", "babel.config.js"], // Specifies the files to be excluded from the compilation
