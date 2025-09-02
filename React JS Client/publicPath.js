@@ -1,1 +1,3 @@
-module.exports = "/";
+// JavaScript
+const publicPath = "/";
+export default publicPath;

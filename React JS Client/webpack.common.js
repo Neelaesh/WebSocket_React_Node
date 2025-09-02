@@ -1,9 +1,14 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ESLintPlugin = require("eslint-webpack-plugin");
-const publicPath = require("./publicPath");
+import path from "path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import ESLintPlugin from "eslint-webpack-plugin";
+import { fileURLToPath } from "url";
 
-module.exports = () => {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+import publicPath from "./publicPath.js";
+
+export default () => {
   return {
     entry: {
       app: "./src/index.tsx", // Entry point for the application

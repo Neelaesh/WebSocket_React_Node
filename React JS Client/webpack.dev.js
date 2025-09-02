@@ -1,7 +1,12 @@
-const path = require("path");
-const { merge } = require("webpack-merge");
-const commonConfig = require("./webpack.common.js");
-const publicPath = require("./publicPath");
+import path from "path";
+import { merge } from "webpack-merge";
+import commonConfig from "./webpack.common.js";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+import publicPath from "./publicPath.js";
 
 const devConfig = () => {
   // Development-specific configuration
@@ -31,4 +36,4 @@ const devConfig = () => {
   };
 };
 
-module.exports = (env) => merge(commonConfig(), devConfig(env));
+export default (env) => merge(commonConfig(), devConfig(env));
