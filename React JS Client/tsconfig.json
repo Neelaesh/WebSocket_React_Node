@@ -12,6 +12,7 @@
     "experimentalDecorators": true, // Enables experimental support for decorators
     "sourceMap": true, // Generates corresponding '.map' file
     "listFiles": true, // Include files in the compilation
+    "moduleResolution": "node", // Specifies the module resolution strategy
     "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
     "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
     //"types": ["jest", "node", "@testing-library/jest-dom"], // Specifies type definitions to be included
